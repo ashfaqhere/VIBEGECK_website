@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Cyan to Blue Gradient matching VIBE Logo -->
+    <linearGradient id="vibeBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b0ff" />
+      <stop offset="50%" stop-color="#0080ff" />
+      <stop offset="100%" stop-color="#0040aa" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Background -->
+  <rect width="500" height="500" fill="#ffffff" rx="32" />
+
+  <!-- VIBE Geometric Shield Mark -->
+  <g transform="translate(110, 80)">
+    <!-- Left Black Diagonal Bars -->
+    <path d="M 0,0 L 45,0 L 125,180 L 100,180 Z" fill="#000000" />
+    <path d="M 55,0 L 100,0 L 140,90 L 115,90 Z" fill="#000000" />
+    <path d="M 110,0 L 155,0 L 170,35 L 145,35 Z" fill="#000000" />
+
+    <!-- Right Cyan/Blue Stylized Loop -->
+    <path d="M 155,0 L 280,0 L 280,65 L 210,65 C 240,85 240,120 200,140 L 125,180 L 125,130 L 175,105 C 195,95 195,80 180,75 L 125,75 L 125,25 L 165,25 Z" fill="url(#vibeBlueGrad)" />
+  </g>
+
+  <!-- ViBE Typography -->
+  <g transform="translate(250, 370)" text-anchor="middle">
+    <!-- Main Title "ViBE" -->
+    <text font-family="'Inter', 'Montserrat', 'Arial', sans-serif" font-weight="900" font-size="64" fill="#000000" letter-spacing="4">
+      V<tspan fill="#000000">i</tspan>BE
+    </text>
+
+    <!-- Tie Icon integrated over the 'i' -->
+    <path d="M -18,-50 L -12,-50 L -10,-40 L -15,-28 L -20,-40 Z" fill="#000000" />
+
+    <!-- Subtitle "VENTURE FOR INNOVATION, BUSINESS & ENTREPRENEURSHIP" -->
+    <text y="35" font-family="'Inter', 'Arial', sans-serif" font-weight="700" font-size="12" fill="#555555" letter-spacing="2">
+      VENTURE FOR INNOVATION, BUSINESS &amp; ENTREPRENEURSHIP
+    </text>
+  </g>
+</svg>
