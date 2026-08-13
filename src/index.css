@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --bg-surface: #fdf7ff;
+    --primary-purple: #4f378a;
+    --primary-container: #6750a4;
+    --accent-purple: #7f52ff;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: var(--bg-surface);
+    color: #1d1b20;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom squircle radius classes matching VIBE design system */
+.rounded-squircle-xl {
+  border-radius: 2rem;
+}
+
+.rounded-squircle-2xl {
+  border-radius: 2.5rem;
+}
+
+/* Glassmorphism effects */
+.glass-header {
+  background: rgba(253, 247, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(203, 196, 210, 0.35);
+}
+
+.glass-dark-card {
+  background: rgba(20, 15, 30, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Custom gradient buttons */
+.btn-primary-purple {
+  background: linear-gradient(135deg, #4f378a 0%, #6750a4 100%);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(79, 55, 138, 0.25);
+}
+
+.btn-primary-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 55, 138, 0.35);
+}
+
+.btn-secondary-white {
+  background: #ffffff;
+  color: #1d1b20;
+  border: 1px solid rgba(203, 196, 210, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary-white:hover {
+  background: #f8f2fa;
+  transform: translateY(-2px);
+}
+
+/* Hide scrollbars for clean galleries */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
