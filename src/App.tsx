@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HeroSection } from './components/HeroSection';
+import { EcosystemSection } from './components/EcosystemSection';
 import { EventGallerySection } from './components/EventGallerySection';
 import { ExecomSection } from './components/ExecomSection';
 import { CommunityPulseSection } from './components/CommunityPulseSection';
@@ -48,6 +49,7 @@ function MainApp() {
               onOpenBecomeMember={() => setIsBecomeMemberOpen(true)}
               onOpenSubmitIdea={() => setIsSubmitIdeaOpen(true)}
             />
+            <EcosystemSection />
             <EventGallerySection />
             <ExecomSection />
             <CommunityPulseSection
