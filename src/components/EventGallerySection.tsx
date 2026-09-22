@@ -9,9 +9,9 @@ export const EventGallerySection: React.FC = () => {
   const { images } = useSiteImages();
 
   // Map mock data with image context overrides
-  const eventsList = EVENT_IMAGES.map((evt, idx) => ({
+  const eventsList = EVENT_IMAGES.map((evt) => ({
     ...evt,
-    imageUrl: images.events[idx]?.imageUrl || evt.imageUrl
+    imageUrl: images.events.find((image) => image.id === evt.id)?.imageUrl || evt.imageUrl
   }));
 
   return (

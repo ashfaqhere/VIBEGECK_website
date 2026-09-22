@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSubmitIdea, on
             <VibeLogo size="md" />
           </div>
           <p className="text-sm text-[#494551] leading-relaxed">
-            © 2024–2025 VIBE GEC Kozhikode. Empowering the next generation of innovators and student entrepreneurs.
+            © 2025–2026 VIBE GEC Kozhikode. Empowering the next generation of innovators and student entrepreneurs.
           </p>
           <p className="text-xs text-[#7a7582] mt-2">
             Innovation and Entrepreneurship Development Centre (IEDC) • Government Engineering College Kozhikode, West Hill, Kerala 673005.

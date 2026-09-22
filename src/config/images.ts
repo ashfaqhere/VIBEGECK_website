@@ -68,6 +68,11 @@ export const DEFAULT_SITE_IMAGES: SiteImagesConfig = {
   // Event Gallery Photos
   events: [
     {
+      id: "evt-6",
+      title: "11th Startup Saturday",
+      imageUrl: "/events-photo/startup%20saturday.png"
+    },
+    {
       id: "evt-1",
       title: "Global Innovation Summit 2026",
       imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800"

@@ -26,6 +26,13 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         if (!parsed.heroBanner || parsed.heroBanner.includes('1518770660439')) {
           parsed.heroBanner = DEFAULT_SITE_IMAGES.heroBanner;
         }
+          if (parsed.events && Array.isArray(parsed.events)) {
+            parsed.events = parsed.events.map((savedItem: any) =>
+              savedItem.id === 'evt-6'
+                ? DEFAULT_SITE_IMAGES.events.find((event) => event.id === 'evt-6')
+                : savedItem
+            );
+          }
         // Ensure execom uses current local uploaded avatars if cached was old unsplash
         if (parsed.execom && Array.isArray(parsed.execom)) {
           parsed.execom = DEFAULT_SITE_IMAGES.execom.map((defItem) => {

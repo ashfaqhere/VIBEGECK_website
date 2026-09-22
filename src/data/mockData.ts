@@ -155,6 +155,14 @@ export const EXECOM_MEMBERS: ExecomMember[] = [
 
 export const EVENT_IMAGES: EventImage[] = [
   {
+    id: 'evt-6',
+    title: '11th Startup Saturday',
+    date: 'Aug 22, 2026',
+    category: 'Startup Event',
+    imageUrl: '/events-photo/startup%20saturday.png',
+    description: 'A community gathering for student founders, aspiring entrepreneurs, and startup enthusiasts.'
+  },
+  {
     id: 'evt-1',
     title: 'Global Innovation Summit 2026',
     date: 'Aug 2026',
